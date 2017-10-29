@@ -49,10 +49,16 @@ public final class Immutable {
 	}
 
 	public String getFoodsIndex(int index) {
-		
 		return foods.get(index);
 	}
 	
+	public List<String> getFoods() {
+		List <String> copyFoods = new ArrayList<String>();
+		for (String food : foods) {
+			copyFoods.add(new String(food));
+		}
+		return copyFoods;
+	}
 	
 }
 
