@@ -1,0 +1,29 @@
+package chapter2;
+
+
+/**
+*
+*khaitq on 29 oct. 2017
+*/
+
+public class Animal {
+
+	public Animal(boolean fly, boolean swim) {
+		this.fly = fly;
+		this.swim = swim;
+	}
+	
+	private boolean swim;
+	
+	private boolean fly;
+	
+	public boolean canFly() {
+		return fly;
+	}
+	
+	public boolean canSwim() {
+		return swim;
+	}
+}
+
+
