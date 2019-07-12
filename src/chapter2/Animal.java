@@ -8,10 +8,13 @@ package chapter2;
 
 public class Animal {
 
-	public Animal(boolean fly, boolean swim) {
+	public Animal(boolean fly, boolean swim, boolean male) {
 		this.fly = fly;
 		this.swim = swim;
+		this.male = male;
 	}
+	
+	private boolean male;
 	
 	private boolean swim;
 	
@@ -23,6 +26,10 @@ public class Animal {
 	
 	public boolean canSwim() {
 		return swim;
+	}
+	
+	public boolean isMale() {
+		return male;
 	}
 }
 

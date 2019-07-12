@@ -20,6 +20,10 @@ public class AnimalPredicate {
 	public static Predicate<Animal> isEqual(Animal a) {
 		return b -> b.equals(a);
 	}
+	
+	public static Predicate<Animal> isMale() {
+		return b -> b.isMale();
+	}
 }
 
 
